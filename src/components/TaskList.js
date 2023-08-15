@@ -8,10 +8,6 @@ function TaskList({ tasks, setTaskList }) {
         setTaskList(updatedTaskList)
     }
 
-    // const filteredTasks = selectedCategory === "All"
-    //     ? tasks
-    //     : tasks.filter((task) => task.category === selectedCategory)
-
     const updatedTasks = tasks.map((task, index) => {
         return <Task key={index} text={task.text} category={task.category} onDelete={handleDeleteTask} />
     })
