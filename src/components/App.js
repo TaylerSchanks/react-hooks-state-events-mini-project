@@ -24,7 +24,7 @@ function App() {
     const onTaskFormSubmit = (newTask) => {
         setTasks([...tasks, newTask])
     }
-
+//test
   return (
     <div className="App">
       <h2>My tasks</h2>
